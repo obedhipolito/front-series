@@ -9,14 +9,14 @@ const Header = () => {
           <div className="fw7 mr1">Series</div>
         </Link>        
         <Link to="/" className="ml1 no-underline black">
-          new
+          ApI-series
         </Link>
         <div className="ml1">|</div>
         <Link
           to="/create"
           className="ml1 no-underline black"
         >
-          submit
+          crear
         </Link>
       </div>
     </div>

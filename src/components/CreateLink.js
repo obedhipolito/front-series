@@ -188,7 +188,7 @@ const CreateLink = () => {
             placeholder="Protagonista"
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">SUBIR</button>
       </form>
     </div>
   );
