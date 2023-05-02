@@ -1,6 +1,0 @@
-FROM python:3
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-WORKDIR /src/components
-RUN npm install
-RUN npm start
