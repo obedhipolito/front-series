@@ -8,6 +8,15 @@ query {
     id
     nombre
     temporadas
+    capitulos
+    duracion
+    clasificacion
+    categoria
+    idioma
+    plataforma
+    director
+    protagonista
+
   }
 }
 `
