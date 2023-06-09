@@ -1,0 +1,13 @@
+{
+    "select_language": "Choisir la langue",
+    "hello_welcome_to_my_APP": "Bonjour, bienvenue sur mon APP",
+    "this_is_an_example": "Ceci est un exemple",
+    "please_enter_name": "Veuillez saisir le nom",
+    "series": "Série",
+    "search": "Chercher",
+    "craete": "Créer",
+    "image generator": "Générateur d'images",
+    "logout": "Fermer la session",
+    "login": "Commencer la session",
+    "more service": "Plus de services"
+}   

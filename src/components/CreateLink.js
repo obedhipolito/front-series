@@ -14,9 +14,10 @@ const CREATE_LINK_MUTATION = gql`
     $duracion: Int!
     $director: String!
     $protagonista: String!
+    $resena: String!
 
   ) {
-    createProducciones(nombre: $nombre, idioma: $idioma, categoria: $categoria, clasificacion: $clasificacion, temporadas: $temporadas, capitulos: $capitulos, plataforma: $plataforma, duracion: $duracion, director: $director, protagonista: $protagonista) {
+    createProducciones(nombre: $nombre, idioma: $idioma, categoria: $categoria, clasificacion: $clasificacion, temporadas: $temporadas, capitulos: $capitulos, plataforma: $plataforma, duracion: $duracion, director: $director, protagonista: $protagonista, resena: $resena) {
       id
       nombre
       temporadas
@@ -35,7 +36,8 @@ const CreateLink = () => {
     plataforma: '',
     duracion: 0,
     director: '',
-    protagonista: ''
+    protagonista: '',
+    resena: ''
 
   });
 
@@ -52,7 +54,8 @@ const CreateLink = () => {
       plataforma: formState.plataforma,
       duracion: formState.duracion,
       director: formState.director,
-      protagonista: formState.protagonista
+      protagonista: formState.protagonista,
+      resena: formState.resena
     },
     onCompleted: () => navigate('/')
   });
@@ -186,6 +189,18 @@ const CreateLink = () => {
             }
             type="text"
             placeholder="Protagonista"
+          />
+          <input
+            className="mb2"
+            value={formState.resena}
+            onChange={(e) =>
+              setFormState({
+                ...formState,
+                resena: e.target.value
+              })
+            }
+            type="text"
+            placeholder="Reseña"
           />
         </div>
         <button type="submit">SUBIR</button>

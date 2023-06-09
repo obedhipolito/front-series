@@ -16,7 +16,8 @@ query {
     plataforma
     director
     protagonista
-
+    resena
+    
   }
 }
 `
